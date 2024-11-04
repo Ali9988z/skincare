@@ -1,0 +1,116 @@
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar .navbar-brand span {
+    color: #343a40;
+}
+
+.navbar .nav-link, .navbar .navbar-brand, .navbar .dropdown-toggle {
+    color: #343a40 !important;
+}
+
+.badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.4rem;
+}
+/* Right-side cart drawer */
+/* Right-side cart drawer */
+.cart-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1050; /* Above other elements */
+}
+
+.cart-drawer.open {
+    transform: translateX(0);
+}
+
+.cart-drawer-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Container for the Order Place button */
+.order-button-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.order-button-container button {
+    width: 100%;
+}
+.custom-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.custom-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.custom-modal .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.custom-modal input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.custom-modal input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+.custom-modal .search-by {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+.custom-modal .search-by span {
+    color: #007bff;
+    cursor: pointer;
+}
